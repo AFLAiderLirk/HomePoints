@@ -1,0 +1,23 @@
+name: HomePoints
+version: 1.0.1
+main: io.github.aflaiderlirk.homepoints.HomePointsPlugin
+api-version: '1.21'
+author: AFLAiderLirk
+description: Personal homes with a GUI, movement/damage-cancelled warmup and cooldown.
+commands:
+  sethome:
+    description: Create or update a personal home
+    usage: /sethome <name>
+  home:
+    description: Teleport to a home or open the GUI
+    usage: /home [name]
+  delhome:
+    description: Delete a personal home
+    usage: /delhome <name>
+permissions:
+  homepoints.sethome:
+    default: true
+  homepoints.home:
+    default: true
+  homepoints.delhome:
+    default: true

@@ -1,0 +1,52 @@
+# Paper 1.21.x / Java 21+. Changes require a full server restart.
+homes:
+  max-per-player: 3
+
+teleport:
+  delay-seconds: 3
+  cooldown-seconds: 30
+  cancel-on-move: true
+  cancel-on-damage: true
+
+menu:
+  title: '&8Your homes &7(page {page}/{pages})'
+  home-icon: COMPASS
+  home-name: '&a{home}'
+  home-lore:
+    - '&7World: &f{world}'
+    - '&7XYZ: &f{x}, {y}, {z}'
+    - ''
+    - '&eClick to teleport'
+    - '&cShift + click to delete'
+  unavailable-world-name: 'unavailable'
+  empty-name: '&7You have no homes'
+  empty-lore:
+    - '&7Use &e/sethome <name> &7to create one.'
+  info-name: '&bHomes: &f{count}/{max}'
+  previous-name: '&ePrevious page'
+  next-name: '&eNext page'
+  confirm-title: '&8Delete home: {home}?'
+  confirm-name: '&cConfirm deletion'
+  cancel-name: '&aCancel'
+
+messages:
+  prefix: '&8[&aHomePoints&8] &r'
+  players-only: '&cOnly players may use this command.'
+  no-permission: '&cYou do not have permission.'
+  usage-set: '&eUsage: /sethome <name>'
+  usage-home: '&eUsage: /home [name]'
+  usage-delete: '&eUsage: /delhome <name>'
+  invalid-name: '&cUse 1-16 Latin letters, digits, underscores or dashes.'
+  limit-reached: '&cYou can have at most {max} homes.'
+  home-saved: '&aHome &f{home} &asaved.'
+  home-deleted: '&aHome &f{home} &adeleted.'
+  home-not-found: '&cHome &f{home} &cdoes not exist.'
+  world-unavailable: '&cThe world for home &f{home} &cis not loaded.'
+  storage-error: '&cCould not save homes. Contact an administrator.'
+  already-teleporting: '&cYou already have a pending teleport.'
+  teleport-wait: '&eTeleporting to &f{home} &ein &f{seconds} &eseconds. Do not move.'
+  teleport-cancelled: '&cTeleport cancelled because you moved or changed worlds.'
+  teleport-cancelled-damage: '&cTeleport cancelled because you took damage.'
+  teleport-success: '&aTeleported to &f{home}&a.'
+  teleport-failed: '&cTeleport failed. Please try again.'
+  teleport-cooldown: '&cPlease wait &f{seconds} &cseconds before teleporting again.'
